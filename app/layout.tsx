@@ -10,6 +10,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollTop from "@/components/Buttons/ScrollTop";
 import "@/styles/globals.css";
+import "@/styles/loaders/book.css";
+import "@/styles/loaders/packman.css";
 
 export const metadata: Metadata = {
   title: {
@@ -45,7 +47,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
+          <div className="relative flex flex-col h-screen max-w-[1330px] px-6 mx-auto">
             <Navbar />
 
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
