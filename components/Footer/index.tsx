@@ -19,8 +19,8 @@ import { siteConfig } from "@/config/site";
 
 const Footer = () => {
   return (
-    <footer className="">
-      <NextUINavbar maxWidth="xl">
+    <footer>
+      <NextUINavbar className="border-t border-divider" maxWidth="xl">
         <NavbarContent
           className="sm:flex basis-1/5 sm:basis-full"
           justify="start"

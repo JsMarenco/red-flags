@@ -1,0 +1,262 @@
+.pacman__circle {
+  position: relative;
+  left: -100px;
+  width: 0;
+  height: 0;
+  border: 50px solid #FDD835;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: pacman__circle-move 5s linear 0s infinite normal forwards;
+}
+
+.pacman__circle:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid #FDD835;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: pacman__circle-chomp1 .25s ease-in-out 0s infinite normal forwards;
+}
+
+.pacman__circle:after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid #FDD835;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: pacman__circle-chomp2 .25s ease-in-out 0s infinite normal forwards;
+}
+
+.pacman__loader {
+  position: relative;
+  top: 50px;
+  width: 300px;
+  height: 0px;
+  border-top: 10px dotted black;
+  animation: pacman__loader-dots 5s ease-in-out 0s infinite normal forwards;
+}
+
+.pacman__dots {
+  position: relative;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pacman__dot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #1E88E5;
+  animation: pacman__dot-animation 5s linear 0s infinite none normal;
+}
+
+.pacman__dot:nth-child(1) {
+  animation-delay: 0s
+}
+
+.pacman__dot:nth-child(2) {
+  animation-delay: 0.25s
+}
+
+.pacman__dot:nth-child(3) {
+  animation-delay: 0.5s
+}
+
+.pacman__dot:nth-child(4) {
+  animation-delay: 0.75s
+}
+
+.pacman__dot:nth-child(5) {
+  animation-delay: 1s
+}
+
+.pacman__dot:nth-child(6) {
+  animation-delay: 1.25s
+}
+
+.pacman__dot:nth-child(7) {
+  animation-delay: 1.5s
+}
+
+.pacman__dot:nth-child(8) {
+  animation-delay: 1.75s
+}
+
+.pacman__dot:nth-child(9) {
+  animation-delay: 1.9s
+}
+
+.pacman__dot:nth-child(10) {
+  animation-delay: 2.1s
+}
+
+.pacman__dots--secondary {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pacman__dot--secondary {
+  position: relative;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #F44336;
+  opacity: 0;
+  animation: pacman__dot--secondary-animation 5s linear 0s infinite none normal;
+}
+
+.pacman__dot--secondary:nth-child(10) {
+  animation-delay: 2.5s
+}
+
+.pacman__dot--secondary:nth-child(9) {
+  animation-delay: 2.75s
+}
+
+.pacman__dot--secondary:nth-child(8) {
+  animation-delay: 3.0s
+}
+
+.pacman__dot--secondary:nth-child(7) {
+  animation-delay: 3.25s
+}
+
+.pacman__dot--secondary:nth-child(6) {
+  animation-delay: 3.5s
+}
+
+.pacman__dot--secondary:nth-child(5) {
+  animation-delay: 3.75s
+}
+
+.pacman__dot--secondary:nth-child(4) {
+  animation-delay: 4.0s
+}
+
+.pacman__dot--secondary:nth-child(3) {
+  animation-delay: 4.25s
+}
+
+.pacman__dot--secondary:nth-child(2) {
+  animation-delay: 4.5s
+}
+
+.pacman__dot--secondary:nth-child(1) {
+  animation-delay: 4.6s
+}
+
+/* Definición de animaciones */
+@keyframes pacman__circle-chomp1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pacman__circle-chomp2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pacman__circle-move {
+  0%, 100% {
+    left: -100px;
+  }
+
+  0%, 48% {
+    transform: rotateY(0deg);
+  }
+
+  50%, 100% {
+    transform: rotateY(180deg);
+  }
+
+  50% {
+    left: 100%;
+  }
+}
+
+@keyframes pacman__loader-dots {
+  0%, 100% {
+    border-top: 10px dotted #1E88E5;
+  }
+
+  0%, 48% {
+    border-top: 10px dotted #1E88E5;
+  }
+
+  50%, 100% {
+    border-top: 10px dotted #F44336;
+  }
+
+  50% {
+    border-top: 10px dotted #F44336;
+  }
+}
+
+@keyframes pacman__dot-animation {
+  0%,4% {
+    background: #1E88E5;
+    opacity: 1;
+  }
+
+  5%,94% {
+    background: #F44336;
+    opacity: 0;
+  }
+
+  95%,100% {
+    background: #1E88E5;
+    opacity: 1;
+  }
+}
+
+@keyframes pacman__dot--secondary-animation {
+  0%,4% {
+    background: #F44336;
+    opacity: 1;
+  }
+
+  5%,94% {
+    opacity: 0;
+  }
+
+  95%,100% {
+    background: #F44336;
+    opacity: 1;
+  }
+}
