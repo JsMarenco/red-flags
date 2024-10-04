@@ -1,8 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "JsMarenco's template",
-  description: "Just another template",
+  name: "FlagScan",
+  description:
+    "FlagScan analyzes your WhatsApp conversations to identify potential red flags and green flags, offering insights into communication patterns and relationship dynamics.",
   navItems: [
     {
       label: "Home",
