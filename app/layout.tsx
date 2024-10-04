@@ -46,7 +46,7 @@ export default function RootLayout({
           fontMontserrat.className,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col h-screen max-w-[1330px] px-6 mx-auto">
             <Navbar />
 
