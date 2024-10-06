@@ -12,6 +12,7 @@ import ScrollTop from "@/components/Buttons/ScrollTop";
 import "@/styles/globals.css";
 import "@/styles/loaders/book.css";
 import "@/styles/loaders/packman.css";
+import "@/styles/backgrounds/landing.css";
 import ProductHuntBadge from "@/components/ProductHuntBadge";
 
 export const metadata: Metadata = {
