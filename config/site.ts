@@ -1,3 +1,5 @@
+import appRoutes from "@/constans/routes/app";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -8,6 +10,10 @@ export const siteConfig = {
     {
       label: "Home",
       href: "/",
+    },
+    {
+      label: "Analyze Chat",
+      href: appRoutes.chatAnalyze.router,
     },
   ],
   links: {
