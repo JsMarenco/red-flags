@@ -10,7 +10,7 @@ import appRoutes from "@/constans/routes/app";
 export default function Home() {
   return (
     <>
-      <div className="h-screen absolute w-full z-50 bg-transparent top-0 bottom-0 left-0 right-0 mx-auto">
+      <div className="h-screen absolute w-full z-10 bg-transparent top-0 bottom-0 left-0 right-0 mx-auto">
         <div className="flex flex-col items-center justify-center h-full text-white px-6 bg-transparent">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-center leading-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 drop-shadow-sm">
             Is she / he the right one for you?
