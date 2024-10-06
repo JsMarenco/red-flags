@@ -20,15 +20,27 @@ export default function Home() {
             Let AI analyze your chat for relationship insights.
           </p>
 
-          <Link href={appRoutes.chatAnalyze.router}>
-            <Button
-              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium px-5 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out"
-              color="primary"
-              size="lg"
-            >
-              Analyze My Chat
-            </Button>
-          </Link>
+          <div className="flex space-x-4">
+            <Link href="#how-it-works">
+              <Button
+                className="bg-gray-800 text-white font-medium px-5 py-3 rounded-full shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+                color="primary"
+                size="lg"
+              >
+                How does it work?
+              </Button>
+            </Link>
+
+            <Link href={appRoutes.chatAnalyze.router}>
+              <Button
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium px-5 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out"
+                color="primary"
+                size="lg"
+              >
+                Analyze My Chat
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
 
