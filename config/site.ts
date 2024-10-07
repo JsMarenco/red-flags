@@ -23,5 +23,7 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/jsmarenco",
     instagram: "https://instagram.com/jsmarenco",
     coffee: "https://buymeacoffee.com/jsmarenco",
+    productHunt:
+      "https://www.producthunt.com/posts/whatsapp-flagscan?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-whatsapp&#0045;flagscan",
   },
 };
