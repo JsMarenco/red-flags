@@ -30,16 +30,6 @@ export default function Home() {
                 Analyze My Chat
               </Button>
             </Link>
-
-            <Link href="#how-it-works">
-              <Button
-                className="bg-gray-800 text-white font-medium px-5 py-3 rounded-full shadow-md hover:shadow-lg transition duration-300 ease-in-out"
-                color="primary"
-                size="lg"
-              >
-                How does it work?
-              </Button>
-            </Link>
           </div>
         </div>
       </div>
