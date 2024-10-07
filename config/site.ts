@@ -1,3 +1,5 @@
+import appRoutes from "@/constans/routes/app";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -9,6 +11,10 @@ export const siteConfig = {
       label: "Home",
       href: "/",
     },
+    {
+      label: "Analyze Chat",
+      href: appRoutes.chatAnalyze.router,
+    },
   ],
   links: {
     github: "https://github.com/jsmarenco",
@@ -17,5 +23,6 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/jsmarenco",
     instagram: "https://instagram.com/jsmarenco",
     coffee: "https://buymeacoffee.com/jsmarenco",
+    productHunt: process.env.NEXT_PUBLIC_PRODUCT_HUNT_URL,
   },
 };

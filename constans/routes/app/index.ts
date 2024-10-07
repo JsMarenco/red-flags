@@ -15,7 +15,7 @@ const appRoutes: AppRoutes = {
     router: "/404",
   },
   chatAnalyze: {
-    name: "Analyze",
+    name: "Analyze Chat",
     router: "/chat/analyze",
   },
 };

@@ -12,6 +12,7 @@ import {
   FiInstagram,
 } from "react-icons/fi";
 import { Link } from "@nextui-org/link";
+import { LiaProductHunt } from "react-icons/lia";
 
 // Current project dependencies
 import ThemeSwitch from "@/components/ThemeSwitch";
@@ -72,6 +73,17 @@ const Footer = () => {
               href={siteConfig.links.coffee}
             >
               <FiCoffee
+                className="text-default-500 hover:text-gray-400 dark:hover:text-white"
+                size={22}
+              />
+            </Link>
+
+            <Link
+              isExternal
+              aria-label="Product Hunt"
+              href={siteConfig.links.productHunt}
+            >
+              <LiaProductHunt
                 className="text-default-500 hover:text-gray-400 dark:hover:text-white"
                 size={22}
               />
