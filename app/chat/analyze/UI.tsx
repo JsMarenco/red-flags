@@ -7,6 +7,7 @@ import Conversation from "@/components/Chat";
 import BookLoader from "@/components/Loaders/Book";
 import AnalysisResults from "@/components/AnalysisResults";
 import HowItWorks from "@/components/HowItWorks";
+import ProductHuntBadge from "@/components/ProductHuntBadge";
 
 export default function AnalyzePageUI({
   handleFileChange,
@@ -94,7 +95,11 @@ export default function AnalyzePageUI({
           </div>
         </div>
 
-        <Conversation chat={chat} />
+        <div className="w-full h-full flex flex-col gap-2 justify-center items-center overflow-y-auto">
+          <Conversation chat={chat} />
+
+          <ProductHuntBadge />
+        </div>
       </div>
     </div>
   );

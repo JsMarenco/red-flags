@@ -7,7 +7,7 @@ import PackmanLoader from "../Loaders/Packman";
 
 export default function Chat({ chat }: { chat: Chat | null }) {
   return (
-    <ScrollShadow className="w-full max-h-56 md:max-h-full overflow-x-hidden h-full flex flex-col gap-2 p-2 rounded-lg bg-[#F0F3F5] dark:bg-[#1B1B1E]">
+    <ScrollShadow className="w-full max-h-72 md:max-h-full overflow-x-hidden h-full flex flex-col gap-2 p-2 rounded-lg bg-[#F0F3F5] dark:bg-[#1B1B1E]">
       {chat ? (
         chat.sortedMessages.map((day, index) => (
           <div key={index} className="flex flex-col gap-2">
