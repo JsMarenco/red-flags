@@ -61,7 +61,11 @@ export default function RootLayout({
           </div>
         </Providers>
 
-        <script defer src="https://analytics.chesko.dev/script.js" data-website-id="80ac8c92-8649-491e-86f8-d769ecd0af7a"></script>
+        <script
+          defer
+          data-website-id="80ac8c92-8649-491e-86f8-d769ecd0af7a"
+          src="https://analytics.chesko.dev/script.js"
+        />
       </body>
     </html>
   );
